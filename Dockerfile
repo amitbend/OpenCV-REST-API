@@ -33,4 +33,4 @@ RUN pip3 install opencv-contrib-python
 
 RUN pipenv install --skip-lock --system --dev
 
-CMD gunicorn api.wsgi:app --bind 0.0.0.0:$PORT
+CMD gunicorn api.wsgi:app --bind 0.0.0.0:8080
